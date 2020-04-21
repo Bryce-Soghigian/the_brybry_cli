@@ -1,9 +1,11 @@
 {
   "name": "the_brybry_cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "this is a cli that I will set up that will allow me to bootstrap different web projects and configurations such as react, vue, react-redux, vuex, express/pg/knex, react-mobx, react-context, react-three, electronjs, and potentially more.",
   "main": "src/index.js",
   "bin": {
+    "bry-init":"bin/create-project",
+    "bry":"bin/create-project",
     "brycesoghigian/create-project": "bin/create-project",
     "create-project": "bin/create-project"
   },
@@ -34,10 +36,20 @@
     "arg": "^4.1.3",
     "chalk": "^4.0.0",
     "esm": "^3.2.25",
+    "execa": "^4.0.0",
     "inquirer": "^7.1.0",
-    "ncp": "^2.0.0"
+    "listr": "^0.14.3",
+    "ncp": "^2.0.0",
+    "pkg-install": "^1.0.0"
   },
   "peerDependencies": {
-    "esm": "^3.2.25"
+    "arg": "^4.1.3",
+    "chalk": "^4.0.0",
+    "esm": "^3.2.25",
+    "execa": "^4.0.0",
+    "inquirer": "^7.1.0",
+    "listr": "^0.14.3",
+    "ncp": "^2.0.0",
+    "pkg-install": "^1.0.0"
   }
 }
