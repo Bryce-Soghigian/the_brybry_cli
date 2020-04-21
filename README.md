@@ -9,4 +9,4 @@ npm i the_brybry_cli -g
 ```sh
 bry || create-project
 ```
-
+# THIS PACKAGE IS NOT PRODUCTION READY YET. IT IS ON NPM FOR TEST PURPOSES
