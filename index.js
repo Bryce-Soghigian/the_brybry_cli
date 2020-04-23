@@ -1,4 +1,4 @@
-#!/usr/bin/env/ node
+#!/usr/bin/env node
 const inquirer = require('inquirer');
 const fs = require('fs');
 
@@ -48,6 +48,9 @@ inquirer.prompt(QUESTIONS)
       if (stats.isFile()) {
         const contents = fs.readFileSync(origFilePath, 'utf8');
         
+        // Rename
+        if (file === '.npmignore') file = '.gitignore';
+      
         const writePath = `${CURR_DIR}/${newProjectPath}/${file}`;
         fs.writeFileSync(writePath, contents, 'utf8');
       } else if (stats.isDirectory()) {

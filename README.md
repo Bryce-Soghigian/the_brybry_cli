@@ -7,6 +7,6 @@ npm i the_brybry_cli -g
 ```
 - simply type the commands below to initialize a project
 ```sh
-bry || create-project
+bry
 ```
 # THIS PACKAGE IS NOT PRODUCTION READY YET. IT IS ON NPM FOR TEST PURPOSES
