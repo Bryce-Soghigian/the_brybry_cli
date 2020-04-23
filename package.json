@@ -1,15 +1,17 @@
 {
   "name": "the_brybry_cli",
-  "version": "0.0.7",
+  "version": "0.0.11",
   "description": "this is a cli that I will set up that will allow me to bootstrap different web projects and configurations such as react, vue, react-redux, vuex, express/pg/knex, react-mobx, react-context, react-three, electronjs, and potentially more.",
-  "main": "src/cli.js",
-  "bin": "bin/create-project",
+  "main": "index.js",
+  "bin": {
+    "bry": "./index.js"
+ },
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/cli.js ."
+    "start": "node index.js"
   },
   "keywords": [
     "cli",
@@ -37,11 +39,7 @@
     "type": "git",
     "url": "git+https://github.com/Bryce-Soghigian/the_brybry_cli.git"
   },
-
-
   "files": [
-    "bin/",
-    "src/",
     "templates/"
   ]
 }
