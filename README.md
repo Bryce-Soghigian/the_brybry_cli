@@ -3,11 +3,11 @@ this is a command line interface that I will set up that will allow me to bootst
 
 ## Templates
 The following are templates featured in my package
--vuejs hello world
+- vuejs hello world
 - basic react application
 - react with redux basic
 - express server with knex and pg configured
-
+- threejs basic boilerplate
 
 ## Usage
 -Install the package globally

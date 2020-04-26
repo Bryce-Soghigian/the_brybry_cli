@@ -32,8 +32,9 @@ inquirer.prompt(QUESTIONS)
     const templatePath = `${__dirname}/templates/${projectChoice}`;
   
     fs.mkdirSync(`${CURR_DIR}/${projectName}`);
-
+    console.log("Creating your template...")
     createDirectoryContents(templatePath, projectName);
+    console.log("Files have been created 💫💫💫")
   });
 
   function createDirectoryContents (templatePath, newProjectPath) {
