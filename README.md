@@ -3,11 +3,12 @@ this is a command line interface that I will set up that will allow me to bootst
 
 ## Templates
 The following are templates featured in my package
-- vuejs hello world
-- basic react application
-- react with redux basic
-- express server with knex and pg configured
-- threejs basic boilerplate
+- Typescript React App
+- Vuejs hello world
+- React Standard Library Config
+- react-redux
+- express server with configured knex(with Postgres)
+- ThreeJS within React
 
 ## Usage
 -Install the package globally
@@ -19,3 +20,4 @@ npm i the_brybry_cli -g
 bry
 ```
 # THANK YOU FOR USING THIS PACKAGE
+
