@@ -1,5 +1,10 @@
 // Update with your config settings.
 require('dotenv').config();
+const pg = require('pg')
+pg.defaults.ssl = {
+  rejectUnauthorized: false,
+}
+
 module.exports = {
 
   development: {
@@ -11,7 +16,7 @@ module.exports = {
       port: '5432',
       user: 'postgres',
       password:process.env.PASS,
-      database: 'database_name'
+      database: 'typingdna-db'
     },
     migrations: {
       directory: './db/migrations'
@@ -20,27 +25,13 @@ module.exports = {
   },
 
   production: {
-    client: 'postgres',
-    connection: process.env.DATABASE_URL,
-    migrations: {
-      directory: __dirname + '/db/migrations'
-    }
-   
-  },
-  testing: {
     client: 'pg',
-    useNullAsDefault: true,
-    
-    connection: {
-      host: '127.0.0.1',
-      port: '5432',
-      user: 'postgres',
-      password:process.env.PASS,
-      database: 'database_name'
+    connection: process.env.DATABASE_URL,
+    ssl: {
+      rejectUnauthorized: false
     },
     migrations: {
-      directory: './db/migrations'
-    }
+      directory: __dirname + '/db/migrations'
+    },
   }
-
-};
+}

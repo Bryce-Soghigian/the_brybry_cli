@@ -35,7 +35,7 @@ inquirer.prompt(QUESTIONS)
     console.log("Creating your template...")
     createDirectoryContents(templatePath, projectName);
     console.log("Files have been created 💫💫💫")
-    console.log(`Please run yarn or npm i to install the dependencies for ${templatePath}`)
+    console.log(`Please run yarn or npm i to install the dependencies for ${projectChoice}`)
     console.log(`Good luck on your new side project!`)
   });
 
